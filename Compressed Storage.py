@@ -1,4 +1,4 @@
-mport
+import
 swiftclient
 import boto3
 import gzip
