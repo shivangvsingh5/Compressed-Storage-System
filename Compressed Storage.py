@@ -20,9 +20,9 @@ class storageCompressor():
                                                                     'region_name': ''}
                                                         )
 
-        self.s3_client = boto3.client('s3', aws_access_key_id='YourKey',
-                                      aws_secret_access_key='YourKey',
-                                      region_name='us-west-1'
+        self.s3_client = boto3.client('s3', aws_access_key_id='YourAWSAccessKey',
+                                      aws_secret_access_key='YourSecretKey',
+                                      region_name='YourRegionName'
                                       )
         if self.swift_conn and self.s3_client:
             print "Connection Successfully Validated for Openstack and AWS Public Cloud"
