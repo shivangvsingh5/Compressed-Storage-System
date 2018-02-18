@@ -88,8 +88,6 @@ if __name__ == "__main__":
             object_name = raw_input('Enter object Name:').lower().rstrip()
             sc.retrieveObject(bucketname, object_name)
 
-
-
         elif choice == "q":
             break
         else:
