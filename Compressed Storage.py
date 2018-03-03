@@ -91,4 +91,4 @@ if __name__ == "__main__":
         elif choice == "q":
             break
         else:
-            print("Invalid choice, please choose again\n")
+            print("Invalid choice, choose again\n")
