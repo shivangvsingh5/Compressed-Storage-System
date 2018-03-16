@@ -20,9 +20,9 @@ class storageCompressor():
                                                                     'region_name': ''}
                                                         )
 
-        self.s3_client = boto3.client('s3', aws_access_key_id='YourAWSAccessKey',
+        self.s3_client = boto3.client('s3', aws_access_key_id='YourAccessKey',
                                       aws_secret_access_key='YourSecretKey',
-                                      region_name='YourRegionName'
+                                      region_name='YourRegName'
                                       )
         if self.swift_conn and self.s3_client:
             print "Connection Successfully Validated for Openstack and AWS Public Cloud"
@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
         elif choice == "r":
             bucketname = raw_input('Enter Bucket Name:').lower().rstrip()
-            object_name = raw_input('Enter object Name:').lower().rstrip()
+            object_name = raw_input('Enter Object Name:').lower().rstrip()
             sc.retrieveObject(bucketname, object_name)
 
         elif choice == "q":
