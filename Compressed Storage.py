@@ -10,7 +10,7 @@ class storageCompressor():
     #    s3connection
     def __init__(self):
         '''
-        Initializes the connection to S3 and Openstack
+        Initialize the connection to S3 and Openstack
 
         '''
         self.swift_conn = swiftclient.client.Connection(authurl='Yoururl',
