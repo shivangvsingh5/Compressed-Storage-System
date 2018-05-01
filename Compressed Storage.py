@@ -4,7 +4,7 @@ import gzip
 import gzip
 import shutil
 
-# Creating the connection to S3
+#Creating the connection to S3
 
 class storageCompressor():
     #    s3connection
