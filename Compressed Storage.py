@@ -34,7 +34,7 @@ class storageCompressor():
         s3_created_bucket = self.s3_client.create_bucket(Bucket=bucket_name, CreateBucketConfiguration={
             'LocationConstraint': 'us-west-1'})
 
-        # Returning Success (0) if buckets are successfully created else returning 1
+      # Returning Success (0) if buckets are successfully created else returning 1
 
         if swift_created_bucket and s3_created_bucket:
             return 0
@@ -91,4 +91,4 @@ if __name__ == "__main__":
         elif choice == "q":
             break
         else:
-            print("Wrong choice, please choose again\n")
+            print("Wrong choices, please select again\n")
